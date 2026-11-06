@@ -1,0 +1,42 @@
+Command: python -m unittest -v
+
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 772, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/connection.py", line 37, in get_or_create_client
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/daemon.py", line 124, in start_daemon
+TimeoutError: Timed out waiting for artifact tool daemon socket. Set ARTIFACT_TOOL_RPC_DAEMON_STARTUP_TIMEOUT_S=<seconds> to increase the limit.
+test_add_duplicate_id_is_rejected (test_student_manager.TestStudentManager.test_add_duplicate_id_is_rejected) ... ok
+test_add_empty_id_is_rejected (test_student_manager.TestStudentManager.test_add_empty_id_is_rejected) ... ok
+test_add_empty_name_is_rejected (test_student_manager.TestStudentManager.test_add_empty_name_is_rejected) ... ok
+test_add_marks_above_100_is_rejected (test_student_manager.TestStudentManager.test_add_marks_above_100_is_rejected) ... ok
+test_add_marks_below_zero_is_rejected (test_student_manager.TestStudentManager.test_add_marks_below_zero_is_rejected) ... ok
+test_add_non_numeric_marks_is_rejected (test_student_manager.TestStudentManager.test_add_non_numeric_marks_is_rejected) ... ok
+test_add_trims_id_and_name (test_student_manager.TestStudentManager.test_add_trims_id_and_name) ... ok
+test_add_valid_student (test_student_manager.TestStudentManager.test_add_valid_student) ... ok
+test_count_tracks_add_and_delete (test_student_manager.TestStudentManager.test_count_tracks_add_and_delete) ... ok
+test_delete_existing_student (test_student_manager.TestStudentManager.test_delete_existing_student) ... ok
+test_delete_missing_student_raises_key_error (test_student_manager.TestStudentManager.test_delete_missing_student_raises_key_error) ... ok
+test_empty_list_returns_empty_list (test_student_manager.TestStudentManager.test_empty_list_returns_empty_list) ... ok
+test_get_existing_student (test_student_manager.TestStudentManager.test_get_existing_student) ... ok
+test_get_missing_student_returns_none (test_student_manager.TestStudentManager.test_get_missing_student_returns_none) ... ok
+test_grade_a_boundary (test_student_manager.TestStudentManager.test_grade_a_boundary) ... ok
+test_grade_b_boundary (test_student_manager.TestStudentManager.test_grade_b_boundary) ... ok
+test_grade_c_boundary (test_student_manager.TestStudentManager.test_grade_c_boundary) ... ok
+test_grade_d_boundary (test_student_manager.TestStudentManager.test_grade_d_boundary) ... ok
+test_grade_e_boundary (test_student_manager.TestStudentManager.test_grade_e_boundary) ... ok
+test_grade_f_below_40 (test_student_manager.TestStudentManager.test_grade_f_below_40) ... ok
+test_invalid_update_does_not_change_existing_record (test_student_manager.TestStudentManager.test_invalid_update_does_not_change_existing_record) ... ok
+test_list_students_is_sorted_by_id (test_student_manager.TestStudentManager.test_list_students_is_sorted_by_id) ... ok
+test_update_both_fields (test_student_manager.TestStudentManager.test_update_both_fields) ... ok
+test_update_marks (test_student_manager.TestStudentManager.test_update_marks) ... ok
+test_update_missing_student_raises_key_error (test_student_manager.TestStudentManager.test_update_missing_student_raises_key_error) ... ok
+test_update_name (test_student_manager.TestStudentManager.test_update_name) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.006s
+
+OK
+
+Exit code: 0
